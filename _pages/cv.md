@@ -12,9 +12,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D    , GitHub University, 2018 (expected)
-* M.S., Department of Atmospheric and Oceanic Sciences    University of Colorado, Boulder, December 2023
-* B.S. in GitHub, GitHub University, 2012
+* PhD, Department of Atmospheric and Oceanic Sciences    University of Colorado, Boulder, July 2025 (expected)
+* MS, Department of Atmospheric and Oceanic Sciences    University of Colorado, Boulder, December 2023
+* BA, Physics Major and Computer Science Minor    Vassar College, May 2021
 
 
 
