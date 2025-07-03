@@ -1,0 +1,495 @@
+[    0.000000] Linux version 5.10.16.3-microsoft-standard-WSL2 (oe-user@oe-host) (x86_64-msft-linux-gcc (GCC) 9.3.0, GNU ld (GNU Binutils) 2.34.0.20200220) #1 SMP Fri Apr 2 22:23:49 UTC 2021
+[    0.000000] Command line: initrd=\initrd.img panic=-1 nr_cpus=16 swiotlb=force pty.legacy_count=0
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[    0.000000] x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[    0.000000] x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[    0.000000] x86/fpu: Enabled xstate features 0xe7, context size is 2432 bytes, using 'compacted' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000e0000-0x00000000000e0fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000001fffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x0000000000200000-0x00000000f7ffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000003ff1fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] DMI not present or invalid.
+[    0.000000] Hypervisor detected: Microsoft Hyper-V
+[    0.000000] Hyper-V: features 0xae7f, privilege high: 0x3b8030, hints 0xa4e24, misc 0xe0bed7b2
+[    0.000000] Hyper-V Host Build:22621-10.0-5-0.5185
+[    0.000000] Hyper-V: LAPIC Timer Frequency: 0x1e8480
+[    0.000000] Hyper-V: Using hypercall for remote TLB flush
+[    0.000000] clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000004] tsc: Detected 2611.200 MHz processor
+[    0.000019] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000023] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000028] last_pfn = 0x3ff200 max_arch_pfn = 0x400000000
+[    0.000068] MTRR default type: uncachable
+[    0.000069] MTRR fixed ranges enabled:
+[    0.000071]   00000-3FFFF write-back
+[    0.000072]   40000-7FFFF uncachable
+[    0.000073]   80000-8FFFF write-back
+[    0.000074]   90000-FFFFF uncachable
+[    0.000075] MTRR variable ranges enabled:
+[    0.000077]   0 base 0000000000 mask 7F00000000 write-back
+[    0.000079]   1 base 0100000000 mask 7000000000 write-back
+[    0.000080]   2 disabled
+[    0.000080]   3 disabled
+[    0.000081]   4 disabled
+[    0.000082]   5 disabled
+[    0.000082]   6 disabled
+[    0.000083]   7 disabled
+[    0.000111] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+[    0.000133] last_pfn = 0xf8000 max_arch_pfn = 0x400000000
+[    0.000154] Using GB pages for direct mapping
+[    0.001640] RAMDISK: [mem 0x03035000-0x03044fff]
+[    0.001650] ACPI: Early table checksum verification disabled
+[    0.001692] ACPI: RSDP 0x00000000000E0000 000024 (v02 VRTUAL)
+[    0.001702] ACPI: XSDT 0x0000000000100000 000044 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.001715] ACPI: FACP 0x0000000000101000 000114 (v06 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.001746] ACPI: DSDT 0x00000000001011B8 01E191 (v02 MSFTVM DSDT01   00000001 MSFT 05000000)
+[    0.001755] ACPI: FACS 0x0000000000101114 000040
+[    0.001764] ACPI: OEM0 0x0000000000101154 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.001772] ACPI: SRAT 0x000000000011F349 0003B0 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.001778] ACPI: APIC 0x000000000011F6F9 0000C8 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+[    0.001792] ACPI: Local APIC address 0xfee00000
+[    0.002736] Zone ranges:
+[    0.002738]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.002741]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.002743]   Normal   [mem 0x0000000100000000-0x00000003ff1fffff]
+[    0.002744]   Device   empty
+[    0.002746] Movable zone start for each node
+[    0.002747] Early memory node ranges
+[    0.002748]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[    0.002750]   node   0: [mem 0x0000000000200000-0x00000000f7ffffff]
+[    0.002752]   node   0: [mem 0x0000000100000000-0x00000003ff1fffff]
+[    0.004591] Zeroed struct page in unavailable ranges: 3937 pages
+[    0.004595] Initmem setup node 0 [mem 0x0000000000001000-0x00000003ff1fffff]
+[    0.004597] On node 0 totalpages: 4157599
+[    0.004599]   DMA zone: 59 pages used for memmap
+[    0.004600]   DMA zone: 22 pages reserved
+[    0.004602]   DMA zone: 3743 pages, LIFO batch:0
+[    0.004631]   DMA32 zone: 16320 pages used for memmap
+[    0.004632]   DMA32 zone: 1011712 pages, LIFO batch:63
+[    0.036289]   Normal zone: 49096 pages used for memmap
+[    0.036292]   Normal zone: 3142144 pages, LIFO batch:63
+[    0.037287] ACPI: Local APIC address 0xfee00000
+[    0.037302] ACPI: LAPIC_NMI (acpi_id[0x01] dfl dfl lint[0x1])
+[    0.037768] IOAPIC[0]: apic_id 16, version 17, address 0xfec00000, GSI 0-23
+[    0.037783] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.037787] ACPI: IRQ9 used by override.
+[    0.037790] Using ACPI (MADT) for SMP configuration information
+[    0.037792] TSC deadline timer available
+[    0.037794] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+[    0.037807] [mem 0xf8000000-0xffffffff] available for PCI devices
+[    0.037809] Booting paravirtualized kernel on Hyper-V
+[    0.037811] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.046656] setup_percpu: NR_CPUS:256 nr_cpumask_bits:256 nr_cpu_ids:16 nr_node_ids:1
+[    0.048919] percpu: Embedded 52 pages/cpu s173272 r8192 d31528 u262144
+[    0.048928] pcpu-alloc: s173272 r8192 d31528 u262144 alloc=1*2097152
+[    0.048930] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15
+[    0.048961] Built 1 zonelists, mobility grouping on.  Total pages: 4092102
+[    0.048964] Kernel command line: initrd=\initrd.img panic=-1 nr_cpus=16 swiotlb=force pty.legacy_count=0
+[    0.058110] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[    0.062802] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.063211] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.110620] Memory: 4094124K/16630396K available (16403K kernel code, 2459K rwdata, 3464K rodata, 1444K init, 1164K bss, 386952K reserved, 0K cma-reserved)
+[    0.110692] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    0.110704] ftrace: allocating 49613 entries in 194 pages
+[    0.129992] ftrace: allocated 194 pages with 3 groups
+[    0.130548] rcu: Hierarchical RCU implementation.
+[    0.130549] rcu:     RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=16.
+[    0.130550]  Rude variant of Tasks RCU enabled.
+[    0.130550]  Tracing variant of Tasks RCU enabled.
+[    0.130551] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.130552] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    0.133217] Using NULL legacy PIC
+[    0.133218] NR_IRQS: 16640, nr_irqs: 552, preallocated irqs: 0
+[    0.133619] random: crng done (trusting CPU's manufacturer)
+[    0.133641] Console: colour dummy device 80x25
+[    0.133647] printk: console [tty0] enabled
+[    0.133652] ACPI: Core revision 20200925
+[    0.133725] Failed to register legacy timer interrupt
+[    0.133726] APIC: Switch to symmetric I/O mode setup
+[    0.135505] x2apic: IRQ remapping doesn't support X2APIC mode
+[    0.138961] Switched APIC routing to physical flat.
+[    0.139531] Hyper-V: Using IPI hypercalls
+[    0.139582] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+[    0.139587] Calibrating delay loop (skipped), value calculated using timer frequency.. 5222.40 BogoMIPS (lpj=26112000)
+[    0.139590] pid_max: default: 32768 minimum: 301
+[    0.139606] LSM: Security Framework initializing
+[    0.139638] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.139662] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.139903] x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    0.139918] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.139918] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.139923] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.139924] Spectre V2 : Mitigation: Enhanced IBRS
+[    0.139925] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.139927] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.139928] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.140099] Freeing SMP alternatives memory: 52K
+[    0.140156] smpboot: CPU0: Intel(R) Xeon(R) W-11955M CPU @ 2.60GHz (family: 0x6, model: 0x8d, stepping: 0x1)
+[    0.140221] Performance Events: unsupported p6 CPU model 141 no PMU driver, software events only.
+[    0.140239] rcu: Hierarchical SRCU implementation.
+[    0.140651] smp: Bringing up secondary CPUs ...
+[    0.140720] x86: Booting SMP configuration:
+[    0.140721] .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+[    0.150631] smp: Brought up 1 node, 16 CPUs
+[    0.150635] smpboot: Max logical packages: 1
+[    0.150638] smpboot: Total of 16 processors activated (83558.40 BogoMIPS)
+[    0.191045] node 0 deferred pages initialised in 40ms
+[    0.200619] devtmpfs: initialized
+[    0.200619] x86/mm: Memory block size: 128MB
+[    0.200619] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.200619] futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.200947] NET: Registered protocol family 16
+[    0.201021] thermal_sys: Registered thermal governor 'step_wise'
+[    0.201045] cpuidle: using governor menu
+[    0.201045] ACPI: bus type PCI registered
+[    0.201045] PCI: Fatal: No config space access function found
+[    0.201045] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.201045] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.219653] raid6: skip pq benchmark and using algorithm avx512x4
+[    0.219653] raid6: using avx512x2 recovery algorithm
+[    0.220296] ACPI: Added _OSI(Module Device)
+[    0.220297] ACPI: Added _OSI(Processor Device)
+[    0.220299] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.220300] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.220301] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.220302] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.220303] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.221400] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    0.223086] ACPI: Interpreter enabled
+[    0.223091] ACPI: (supports S0 S5)
+[    0.223093] ACPI: Using IOAPIC for interrupt routing
+[    0.223105] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.223397] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    0.225696] iommu: Default domain type: Translated
+[    0.225810] SCSI subsystem initialized
+[    0.259592] hv_vmbus: Vmbus version:5.2
+[    0.259762] PCI: Using ACPI for IRQ routing
+[    0.259764] PCI: System does not support PCI
+[    0.260250] hv_vmbus: Unknown GUID: c376c1c3-d276-48d2-90a9-c04748072c60
+[    0.260454] clocksource: Switched to clocksource tsc-early
+[    0.383653] VFS: Disk quotas dquot_6.6.0
+[    0.383665] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.383681] FS-Cache: Loaded
+[    0.383705] pnp: PnP ACPI init
+[    0.383867] pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.383911] pnp: PnP ACPI: found 1 devices
+[    0.399956] NET: Registered protocol family 2
+[    0.400633] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    0.400656] TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.401374] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.401451] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.401481] UDP hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.401506] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes, linear)
+[    0.401551] NET: Registered protocol family 1
+[    0.402968] RPC: Registered named UNIX socket transport module.
+[    0.402969] RPC: Registered udp transport module.
+[    0.402970] RPC: Registered tcp transport module.
+[    0.402970] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.402974] PCI: CLS 0 bytes, default 64
+[    0.403009] Trying to unpack rootfs image as initramfs...
+[    0.403507] Freeing initrd memory: 64K
+[    0.403510] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.403511] software IO TLB: mapped [mem 0x00000000f4000000-0x00000000f8000000] (64MB)
+[    0.403537] KVM: vmx: using Hyper-V Enlightened VMCS
+[    0.408890] kvm: already loaded the other module
+[    0.417585] Initialise system trusted keyrings
+[    0.417914] workingset: timestamp_bits=46 max_order=22 bucket_order=0
+[    0.418720] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.419205] NFS: Registering the id_resolver key type
+[    0.419213] Key type id_resolver registered
+[    0.419214] Key type id_legacy registered
+[    0.419216] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    0.420544] Key type cifs.idmap registered
+[    0.420753] fuse: init (API version 7.32)
+[    0.421244] SGI XFS with ACLs, security attributes, realtime, scrub, repair, quota, no debug enabled
+[    0.422126] 9p: Installing v9fs 9p2000 file system support
+[    0.422134] FS-Cache: Netfs '9p' registered for caching
+[    0.422179] FS-Cache: Netfs 'ceph' registered for caching
+[    0.422182] ceph: loaded (mds proto 32)
+[    0.437073] NET: Registered protocol family 38
+[    0.437076] xor: automatically using best checksumming function   avx
+[    0.437079] Key type asymmetric registered
+[    0.437080] Asymmetric key parser 'x509' registered
+[    0.437091] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.440266] hv_vmbus: registering driver hv_pci
+[    0.440471] ACPI: AC Adapter [AC1] (off-line)
+[    0.441617] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.442409] battery: ACPI: Battery Slot [BAT1] (battery present)
+[    0.443413] Non-volatile memory driver v1.3
+[    0.453811] brd: module loaded
+[    0.456660] loop: module loaded
+[    0.456717] hv_vmbus: registering driver hv_storvsc
+[    0.457654] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.457655] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.457674] tun: Universal TUN/TAP device driver, 1.6
+[    0.458835] PPP generic driver version 2.4.2
+[    0.458985] PPP BSD Compression module registered
+[    0.458987] PPP Deflate Compression module registered
+[    0.458991] PPP MPPE Compression module registered
+[    0.458993] NET: Registered protocol family 24
+[    0.459007] hv_vmbus: registering driver hv_netvsc
+[    0.459173] VFIO - User Level meta-driver version: 0.3
+[    0.459441] hv_vmbus: registering driver hyperv_keyboard
+[    0.459797] rtc_cmos 00:00: RTC can wake from S4
+[    0.460445] scsi host0: storvsc_host_t
+[    0.462030] rtc_cmos 00:00: registered as rtc0
+[    0.462610] rtc_cmos 00:00: setting system clock to 2025-07-02T22:05:30 UTC (1751493930)
+[    0.462628] rtc_cmos 00:00: alarms up to one month, 114 bytes nvram
+[    0.463157] device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+[    0.463411] device-mapper: raid: Loading target version 1.15.1
+[    0.463592] hv_utils: Registering HyperV Utility Driver
+[    0.463594] hv_vmbus: registering driver hv_utils
+[    0.463720] hv_utils: cannot register PTP clock: 0
+[    0.463723] hv_vmbus: registering driver hv_balloon
+[    0.463810] hv_vmbus: registering driver dxgkrnl
+[    0.463825] (NULL device *): dxgk: dxg_drv_init  Version: 2103
+[    0.463927] drop_monitor: Initializing network drop monitor service
+[    0.465407] Mirror/redirect action on
+[    0.467445] IPVS: Registered protocols (TCP, UDP)
+[    0.467447] hv_utils: TimeSync IC version 4.0
+[    0.467456] hv_balloon: Using Dynamic Memory protocol version 2.0
+[    0.467485] IPVS: Connection hash table configured (size=4096, memory=64Kbytes)
+[    0.467543] IPVS: ipvs loaded.
+[    0.467545] IPVS: [rr] scheduler registered.
+[    0.467546] IPVS: [wrr] scheduler registered.
+[    0.467547] IPVS: [sh] scheduler registered.
+[    0.467589] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    0.470862] Free page reporting enabled
+[    0.470863] hv_balloon: Cold memory discard hint enabled
+[    0.478488] ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+[    0.479558] Initializing XFRM netlink socket
+[    0.479693] NET: Registered protocol family 10
+[    0.480289] Segment Routing with IPv6
+[    0.482977] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.483103] NET: Registered protocol family 17
+[    0.483121] Bridge firewalling registered
+[    0.483130] 8021q: 802.1Q VLAN Support v1.8
+[    0.483147] sctp: Hash tables configured (bind 256/256)
+[    0.483221] 9pnet: Installing 9P2000 support
+[    0.483236] Key type dns_resolver registered
+[    0.483258] Key type ceph registered
+[    0.483486] libceph: loaded (mon/osd proto 15/24)
+[    0.483648] NET: Registered protocol family 40
+[    0.483652] hv_vmbus: registering driver hv_sock
+[    0.483695] IPI shorthand broadcast: enabled
+[    0.483707] sched_clock: Marking stable (477553406, 6055900)->(520698800, -37089494)
+[    0.484419] registered taskstats version 1
+[    0.484427] Loading compiled-in X.509 certificates
+[    0.485399] Btrfs loaded, crc32c=crc32c-generic
+[    0.493047] Freeing unused kernel image (initmem) memory: 1444K
+[    0.549803] Write protecting the kernel read-only data: 22528k
+[    0.551762] Freeing unused kernel image (text/rodata gap) memory: 2028K
+[    0.552799] Freeing unused kernel image (rodata/data gap) memory: 632K
+[    0.552806] Run /init as init process
+[    0.552807]   with arguments:
+[    0.552807]     /init
+[    0.552808]   with environment:
+[    0.552809]     HOME=/
+[    0.552810]     TERM=linux
+[    1.295659] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.295880] hv_vmbus: Unknown GUID: dde9cbc0-5060-4436-9448-ea1254a5d177
+[    1.297369] hv_pci e0277f76-04e5-411f-8911-6a478a034ba4: PCI VMBus probing: Using version 0x10003
+[    1.298084] hv_pci e0277f76-04e5-411f-8911-6a478a034ba4: PCI host bridge to bus 04e5:00
+[    1.298693] pci 04e5:00:00.0: [1414:008e] type 00 class 0x030200
+[    1.305282] hv_vmbus: Unknown GUID: 6e382d18-3336-4f4b-acc4-2b7703d4df4a
+[    1.306981] (NULL device *): dxgk: mmio allocated 9ffe00000  200000000 9ffe00000 bffdfffff
+[    1.307050] hv_pci 1a62edf1-b683-46dc-9ede-44759c1d5ca1: PCI VMBus probing: Using version 0x10003
+[    1.308507] hv_pci 1a62edf1-b683-46dc-9ede-44759c1d5ca1: PCI host bridge to bus b683:00
+[    1.309083] pci b683:00:00.0: [1414:008e] type 00 class 0x030200
+[    1.489658] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x25a39079a08, max_idle_ns: 440795310461 ns
+[    1.491229] clocksource: Switched to clocksource tsc
+[    1.528698] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[    1.748268] scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    1.749469] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    1.752637] sd 0:0:0:0: [sda] 536870912 512-byte logical blocks: (275 GB/256 GiB)
+[    1.752639] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.752856] sd 0:0:0:0: [sda] Write Protect is off
+[    1.752859] sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+[    1.753308] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    2.166977] EXT4-fs (sda): mounted filesystem with ordered data mode. Opts: (null)
+[    2.250477] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.999721] Adding 4194304k swap on /swap/file.  Priority:-2 extents:3 across:4210688k
+[    4.050333] scsi 0:0:0:1: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+[    4.052342] sd 0:0:0:1: Attached scsi generic sg1 type 0
+[    4.081924] sd 0:0:0:1: [sdb] 536870912 512-byte logical blocks: (275 GB/256 GiB)
+[    4.081928] sd 0:0:0:1: [sdb] 4096-byte physical blocks
+[    4.082380] sd 0:0:0:1: [sdb] Write Protect is off
+[    4.082384] sd 0:0:0:1: [sdb] Mode Sense: 0f 00 00 00
+[    4.083193] sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.095029] sd 0:0:0:1: [sdb] Attached SCSI disk
+[    4.157254] EXT4-fs (sdb): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered
+[    4.283489] FS-Cache: Duplicate cookie detected
+[    4.283494] FS-Cache: O-cookie c=0000000059518433 [p=000000001b05d4e6 fl=222 nc=0 na=1]
+[    4.283496] FS-Cache: O-cookie d=000000002ffeeb1a n=00000000fd4c3373
+[    4.283497] FS-Cache: O-key=[10] '34323934393337373131'
+[    4.283507] FS-Cache: N-cookie c=0000000036e9e17a [p=000000001b05d4e6 fl=2 nc=0 na=1]
+[    4.283508] FS-Cache: N-cookie d=000000002ffeeb1a n=00000000e9137a3d
+[    4.283509] FS-Cache: N-key=[10] '34323934393337373131'
+[    4.614942] 9pnet_virtio: no channels available for device drvfs
+[    4.614955] WARNING: mount: waiting for virtio device...
+[    4.715168] 9pnet_virtio: no channels available for device drvfs
+[    4.815385] 9pnet_virtio: no channels available for device drvfs
+[    4.915618] 9pnet_virtio: no channels available for device drvfs
+[    5.015865] 9pnet_virtio: no channels available for device drvfs
+[    5.116093] 9pnet_virtio: no channels available for device drvfs
+[    5.216342] 9pnet_virtio: no channels available for device drvfs
+[    5.316562] 9pnet_virtio: no channels available for device drvfs
+[    5.416807] 9pnet_virtio: no channels available for device drvfs
+[    5.517034] 9pnet_virtio: no channels available for device drvfs
+[    5.617246] 9pnet_virtio: no channels available for device drvfs
+[    5.717487] 9pnet_virtio: no channels available for device drvfs
+[    5.817697] 9pnet_virtio: no channels available for device drvfs
+[    5.917935] 9pnet_virtio: no channels available for device drvfs
+[    6.018185] 9pnet_virtio: no channels available for device drvfs
+[    6.118415] 9pnet_virtio: no channels available for device drvfs
+[    6.218636] 9pnet_virtio: no channels available for device drvfs
+[    6.318901] 9pnet_virtio: no channels available for device drvfs
+[    6.419143] 9pnet_virtio: no channels available for device drvfs
+[    6.519369] 9pnet_virtio: no channels available for device drvfs
+[    6.519393] init: (1) ERROR: MountPlan9WithRetry:285: mount drvfs on /mnt/c (cache=mmap,noatime,msize=262144,trans=virtio,aname=drvfs;path=C:\;uid=1000;gid=1000;symlinkroot=/mnt/
+[    6.519397] ) failed: 2
+[   49.291260] hv_balloon: Max. dynamic memory size: 16242 MB
+[ 1630.351458] EXT4-fs (sdb): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered
+[ 1630.457514] FS-Cache: Duplicate cookie detected
+[ 1630.457521] FS-Cache: O-cookie c=00000000e39cfe61 [p=000000001b05d4e6 fl=222 nc=0 na=1]
+[ 1630.457523] FS-Cache: O-cookie d=000000002ffeeb1a n=000000003a8a0c94
+[ 1630.457525] FS-Cache: O-key=[10] '34323935313030333238'
+[ 1630.457534] FS-Cache: N-cookie c=00000000af438ff4 [p=000000001b05d4e6 fl=2 nc=0 na=1]
+[ 1630.457535] FS-Cache: N-cookie d=000000002ffeeb1a n=000000001480c3ec
+[ 1630.457536] FS-Cache: N-key=[10] '34323935313030333238'
+[ 1630.673551] 9pnet_virtio: no channels available for device drvfs
+[ 1630.673560] WARNING: mount: waiting for virtio device...
+[ 1630.773840] 9pnet_virtio: no channels available for device drvfs
+[ 1630.874101] 9pnet_virtio: no channels available for device drvfs
+[ 1630.974424] 9pnet_virtio: no channels available for device drvfs
+[ 1631.074713] 9pnet_virtio: no channels available for device drvfs
+[ 1631.175030] 9pnet_virtio: no channels available for device drvfs
+[ 1631.275371] 9pnet_virtio: no channels available for device drvfs
+[ 1631.375897] 9pnet_virtio: no channels available for device drvfs
+[ 1631.476268] 9pnet_virtio: no channels available for device drvfs
+[ 1631.576650] 9pnet_virtio: no channels available for device drvfs
+[ 1631.677203] 9pnet_virtio: no channels available for device drvfs
+[ 1631.777659] 9pnet_virtio: no channels available for device drvfs
+[ 1631.878616] 9pnet_virtio: no channels available for device drvfs
+[ 1631.979075] 9pnet_virtio: no channels available for device drvfs
+[ 1632.079747] 9pnet_virtio: no channels available for device drvfs
+[ 1632.180106] 9pnet_virtio: no channels available for device drvfs
+[ 1632.280425] 9pnet_virtio: no channels available for device drvfs
+[ 1632.380798] 9pnet_virtio: no channels available for device drvfs
+[ 1632.481218] 9pnet_virtio: no channels available for device drvfs
+[ 1632.581685] 9pnet_virtio: no channels available for device drvfs
+[ 1632.581715] init: (1) ERROR: MountPlan9WithRetry:285: mount drvfs on /mnt/c (cache=mmap,noatime,msize=262144,trans=virtio,aname=drvfs;path=C:\;uid=1000;gid=1000;symlinkroot=/mnt/
+[ 1632.581720] ) failed: 2
+[ 1632.643655] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\ffmpeg\bin
+
+[ 1632.643855] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Common Files\Oracle\Java\javapath
+
+[ 1632.644041] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\system32
+
+[ 1632.644211] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows
+[ 1632.644364] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\Wbem
+
+[ 1632.644527] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\WindowsPowerShell\v1.0\
+
+[ 1632.644693] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\OpenSSH\
+
+[ 1632.644858] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\ProgramData\chocolatey\bin
+
+[ 1632.645024] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Wolfram Research\WolframScript\
+
+[ 1632.645192] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\murrayadmin\AppData\Local\Microsoft\WindowsApps
+
+[ 1632.645367] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Docker\Docker\resources\bin
+
+[ 1632.645537] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\dotnet\
+
+[ 1632.645709] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\MATLAB\R2024a\bin
+
+[ 1632.645872] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\PuTTY\
+
+[ 1632.646029] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\system32
+
+[ 1632.646189] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS
+[ 1632.646346] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\Wbem
+
+[ 1632.646510] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+
+[ 1632.646671] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\OpenSSH\
+
+[ 1632.646817] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\texlive\2025\bin\windows\
+
+[ 1632.646960] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Ruby33-x64\bin
+
+[ 1632.647132] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Microsoft\WindowsApps
+
+[ 1632.647275] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Programs\Microsoft VS Code\bin
+
+[ 1632.647421] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Microsoft\WindowsApps
+
+[ 1632.647573] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Programs\Git\cmd
+
+[ 1632.647723] init: (9) ERROR: UtilTranslatePathList:2737: Failed to translate C:\texlive\2025\bin\windows
+
+[ 1748.375627] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\ffmpeg\bin
+
+[ 1748.375675] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Common Files\Oracle\Java\javapath
+
+[ 1748.375711] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\system32
+
+[ 1748.375745] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows
+[ 1748.375781] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\Wbem
+
+[ 1748.375814] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\WindowsPowerShell\v1.0\
+
+[ 1748.375851] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Windows\System32\OpenSSH\
+
+[ 1748.375887] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\ProgramData\chocolatey\bin
+
+[ 1748.375924] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Wolfram Research\WolframScript\
+
+[ 1748.375960] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\murrayadmin\AppData\Local\Microsoft\WindowsApps
+
+[ 1748.375997] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\Docker\Docker\resources\bin
+
+[ 1748.376033] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\dotnet\
+
+[ 1748.376069] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\MATLAB\R2024a\bin
+
+[ 1748.376106] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Program Files\PuTTY\
+
+[ 1748.376142] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\system32
+
+[ 1748.376178] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS
+[ 1748.376214] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\Wbem
+
+[ 1748.376250] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+
+[ 1748.376286] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\WINDOWS\System32\OpenSSH\
+
+[ 1748.376322] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\texlive\2025\bin\windows\
+
+[ 1748.376359] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Ruby33-x64\bin
+
+[ 1748.376400] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Microsoft\WindowsApps
+
+[ 1748.376437] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Programs\Microsoft VS Code\bin
+
+[ 1748.376473] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Microsoft\WindowsApps
+
+[ 1748.376509] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\Users\etmu9498\AppData\Local\Programs\Git\cmd
+
+[ 1748.376545] init: (155) ERROR: UtilTranslatePathList:2737: Failed to translate C:\texlive\2025\bin\windows
