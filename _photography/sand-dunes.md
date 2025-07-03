@@ -41,5 +41,3 @@ Photographs were taken with my Olympus OM-IV with Kodak Gold 200 film. Photos we
 
 
 {% include gallery class="gallery--half" %}
-
-<!-- {% include gallery caption="TakenPhotos taken during a road trip to the Great Sand Dunes National Park, May 2025." %} -->
