@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Resume: [June 2025](/files/ethan-murray-resume.pdf){:target="_blank" .btn--research}
+Resume: [July 2025](/files/ethan-murray-resume.pdf){:target="_blank" .btn--research}
 
-CV: [June 2025](/files/ethan-murray-cv.pdf){:target="_blank" .btn--research}
+CV: [July 2025](/files/ethan-murray-cv.pdf){:target="_blank" .btn--research}
 <br>
 
 

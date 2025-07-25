@@ -4,10 +4,12 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<ul style="font-size: 1.3em; margin-bottom: 0;">
+  {% if site.author.googlescholar %}
+    <li class="wordwrap" style="margin-bottom: 0;">You can find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</li>
+  {% endif %}
+  <li class="wordwrap" style="margin-top: 0;">Here is a copy of my PhD dissertation: "<a href="/files/ethan-murray-phd-dissertation.pdf" target="_blank">Investigating Tropical Cyclone Clouds, Thermodynamics, and Dynamics Via Novel Remote Sensing and Modeling Techniques"</a>.</li>
+</ul>
 
 {% include base_path %}
 
