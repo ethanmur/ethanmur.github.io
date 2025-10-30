@@ -9,16 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-Resume: [July 2025](/files/ethan-murray-resume.pdf){:target="_blank" .btn--research}
+Resume: [October 2025](/files/ethan-murray-resume.pdf){:target="_blank" .btn--research}
 
-CV: [July 2025](/files/ethan-murray-cv.pdf){:target="_blank" .btn--research}
+CV: [October 2025](/files/ethan-murray-cv.pdf){:target="_blank" .btn--research}
 <br>
 
 
 Education
 ======
 * PhD, Department of Atmospheric and Oceanic Sciences
-  * University of Colorado, Boulder, July 2025 (expected)
+  * University of Colorado, Boulder, July 2025
 * MS, Department of Atmospheric and Oceanic Sciences
   * University of Colorado, Boulder, December 2023
 * BA, Physics Major and Computer Science Minor
