@@ -5,7 +5,7 @@ hide_title: true
 author_profile: true
 ---
 
-<p class="landing-blurb">Working at the intersection of atmospheric observations and high-resolution modeling to better understand and predict severe weather</p>
+<p class="landing-blurb">Working at the intersection of atmospheric observations and modeling, improving severe weather prediction</p>
 
 <div class="landing-mosaic">
   <figure class="tile--hero tile--sky"><img src="/images/landing-page/torus-convection.jpg" alt="A towering cumulonimbus cloud seen from an aircraft window"></figure>
