@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "My PhD Research: Tropical Cyclone Observations and Models"
+title: "Research"
 permalink: /current-research/
 author_profile: true
 ---

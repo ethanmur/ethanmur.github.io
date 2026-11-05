@@ -1,21 +1,16 @@
 ---
 permalink: /
-title: "About Me"
+title: "Home"
+hide_title: true
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-Hello! I am a postdoctoral resesarcher working at NOAA's [Atlantic Oceanographic & Meteorological Laboratory](https://www.aoml.noaa.gov/) and the [University of Miami](http://earth.miami.edu/). I am currently studying the physics of tropical convection to better understand severe weather systems like hurricanes.
+<p class="landing-blurb">I am a postdoctoral researcher working at the intersection of atmospheric observations and modeling to better understand and predict severe weather systems like hurricanes.</p>
 
-I completed my PhD in July 2025 at the [University of Colorado Boulder](https://www.colorado.edu/) studying the structure and impacts of North Atlantic tropical cyclones. I recieved a BA in physics with a minor in computer science from [Vassar College](https://www.vassar.edu/) in May 2021.
-
-My [current research](/current-research) compares detailed measurements from NOAA's Hurricane Hunter Aircraft to tropical cyclone models. I have a broad range of academic and personal interests which I explore through [smaller projects](/blog). In my free time, I like to explore Colorado and take [photos](/photography) with my friends. 
-
-## Navigating this website
-
-* **[Research](/current-research)** - Learn about my PhD research, including the novel lidar measurements our group has recently made within tropical cyclones.
-* **[CV/Resume](/cv)** - Details on my academic and professional background.
-* **[Blog](/blog)** - A collection of notebooks, essays, and work on various topics.
-* **[Photography](/photography)** -  Photos from recent adventures.
+<div class="landing-mosaic">
+  <figure class="tile--hero tile--sky"><img src="/images/landing-page/IMG_5587.jpg" alt="A towering cumulonimbus cloud seen from an aircraft window"></figure>
+  <figure class="tile--tall tile--balloon"><img src="/images/landing-page/f174a6fd-cfbb-423c-b2f8-f2e93bc103ca.jpg" alt="Two people preparing to launch a weather balloon on a grassy coastal bluff"></figure>
+  <figure class="tile--wide"><img src="/images/landing-page/IMG_9360.JPG" alt="Atmospheric instruments mounted on the bow of a research boat"></figure>
+  <figure class="tile--wide"><img src="/images/landing-page/combined_overview_trimmed.png" alt="Satellite view of tropical convection and a large storm system over the Atlantic"></figure>
+  <figure class="tile--full tile--fit"><img src="/images/landing-page/rbs_figure1.png" alt="Radar reflectivity and lidar cross-sections through a tropical cyclone"></figure>
+</div>
