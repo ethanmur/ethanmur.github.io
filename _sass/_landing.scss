@@ -26,7 +26,14 @@
     object-fit: cover;
   }
 
-  // Science figures keep their full extent instead of being cropped
+  // Science figures keep their full extent instead of being cropped.
+  // Their tile is transparent so figures with transparent backgrounds
+  // show the page color instead of a white card.
+  .tile--fit {
+    background: transparent;
+    border-color: transparent;
+  }
+
   .tile--fit img {
     object-fit: contain;
   }
@@ -52,7 +59,9 @@
 }
 
 .page__content p.landing-blurb {
-  font-size: 1.6em;
-  line-height: 1.45;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 1.9em;
+  line-height: 1.3;
   margin: 0 0 1em;
 }

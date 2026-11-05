@@ -73,8 +73,6 @@ exclude:
   - README
   - tmp
   - website_plan.md
-  - images/landing-page/rbs_figure9.png
-  - "images/landing-page/09l_2024092600_snapshot_mrms_3h_f036_final (1).png"
   - vendor
 keep_files:
   - .git
